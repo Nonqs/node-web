@@ -6,14 +6,14 @@ const router = express.Router();
 router.get("/", (req, res) => {
 
     //res.sendFile(path.join(__dirname, "views/index.html"));
-    res.render("index", { tittle: "First website"});
+    res.render("index.ejs", { tittle: "First website"});
 
 });
 
 router.get("/contact", (req, res) => {
 
     //res.sendFile(path.join(__dirname, "views/index.html"));
-    res.render("contact", { tittle: "Contact page"});
+    res.render("contact.ejs", { tittle: "Contact page"});
 
 });
 
